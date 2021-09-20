@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 1 y 2</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .site-title {
+            width: 30%;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 80px;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner>img {
+            width: 100%;
+            height: 400px;
+            max-width: 1400px;
+            object-fit: cover;
+        }
+
+        .services-section,
+        .news-section,
+        .team-section {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .news-section,
+        .header-container {
+            background-color: #f7f7f7
+        }
+
+        .news-section {
+            flex-wrap: wrap;
+        }
+
+        .services-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .news-info {
+            width: 50%;
+            padding: 20px;
+        }
+        .news-info__imagen {
+            width: 50%;
+            height: fit-content;
+        }
+
+
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+
+        .footer-section {
+            background-color: #25294f;
+            height: 200px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .services-info__imagen {
+            border-radius: 10%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .team-info {
+            width: 25%;
+            padding: 15px;
+        }
+
+        .team-info__imagen {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+    <!-- inicio encabezado del sitio -->
+
+    <header class="header-section">
+        <div class="header-container">
+
+            <div class="site-title">
+                <h1>Inventario Web</h1>
+            </div>
+
+            <!-- Inicio menú navegación -->
+
+            <nav class="site-nav">
+                <a href="#">Inicio</a>
+                <a href="#services">Funcionalidad</a>
+                <a href="#news">Mockups</a>
+                <a href="#team">Development Team</a>
+            </nav>
+
+
+
+            <!-- Fin menú navegación -->
+
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./logomision.png" alt="Logo MisionTic 2022">
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="./banner.jpg" alt="A banner image">
+        </div>
+    </header>
+
+    <!-- fin encabezado del sitio -->
+
+
+    <!-- inicio contenido principal -->
+    <main>
+
+        <h2>Funcionalidad</h2>
+        <!-- inicio sección de Funcionalidades -->
+
+        <section id="services" class="services-section">
+            <article class="services-info">
+                <img class="services-info__imagen" src="./adicionar.jpg" alt="botón adicionar">
+                <h2 class="services-info__title">Adicionar</h2>
+                <p class="services-info__text">
+                    El botón adicionar permitirá agregar una nueva entrada de un producto al inventario, en esta se
+                    incluirá el ID del producto, el nombre, la cantidad de unidades de ese producto en particular, el
+                    preco unitario y una imagen de referencia.
+                </p>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="./editar.jpg" alt="botón editar">
+                <h2 class="services-info__title">Editar</h2>
+                <p class="services-info__text">
+                    El botón editar permitirá manipular los datos de un producto previamente seleccionado y que ya ha
+                    sido ingresado al inventario.
+                </p>
+            </article>
+            <article class="services-info">
+                <img class="services-info__imagen" src="./eliminar.jpg" alt="botón eliminar">
+                <h2 class="services-info__title">Eliminar</h2>
+                <p class="services-info__text">
+                    El botón eliminar permitirá borrar todo rastro de un producto previamente seleccionado y que ya ha
+                    sido ingresado al inventario.
+                </p>
+            </article>
+        </section>
+        <!-- fin sección de Funcionalidades -->
+
+
+
+        <h2>Mockups</h2>
+        <!-- inicio sección de Mockups -->
+
+        <section id="news" class="news-section">
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./pag_inicio.jpg" alt="página de inicio">
+                    <h2 class="news-info__title">página de inicio</h2>
+                </div>
+                <p class="news-info__text">
+                    En esta página encontraremos el inicio del sistema, con un botón para ingresar al inventario y los
+                    datos del equipo desarrollador.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./pag_principal.jpg" alt="página principal">
+                    <h2 class="news-info__title">Página principal</h2>
+                </div>
+                <p class="news-info__text">
+                    En esta página encontraremos el sistema principal del inventario web, el cual consta de la barra de
+                    búsqueda, la grilla de visualización y los botones de funcionalidad.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./pag_adicionar.jpg" alt="página de adición o edición">
+                    <h2 class="news-info__title">Páginas de adción y editado</h2>
+                </div>
+                <p class="news-info__text">
+                    Estas páginas son muy similares en funcionalidad y front-end, su única diferencia radica en que una
+                    está destinada exclusivamente a dicionar un producto nuevo y la otra a editar un producto ya
+                    existente.
+                </p>
+            </article>
+
+            <article class="news-info">
+                <div class="news-header">
+                    <img class="news-info__imagen" src="./pag_eliminar.jpg" alt="página de eliminación">
+                    <h2 class="news-info__title">Página de eliminación</h2>
+                </div>
+                <p class="news-info__text">
+                    En esta página podremos eliminar un producto ya existente de nuestra base de datos y de la grilla de
+                    visualización.
+                </p>
+            </article>
+
+        </section>
+        <!-- fin sección de Mockups -->
+
+
+        <h2>Development Team</h2>
+        <!-- inicio sección del Development Team -->
+        <section id="team" class="team-section">
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="http://placeimg.com/100/200/people" alt="">
+                <h2 class="team-info__title">Product Owner</h2>
+                <p class="team-info__text">
+                    Magda Aguilar		
+                </p>
+            </article>
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="http://placeimg.com/100/200/tech" alt="">
+                <h2 class="team-info__title">Scrum Master</h2>
+                <p class="team-info__text">
+                    Daniel Ruiz 		
+                </p>
+            </article>
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="http://placeimg.com/100/200/nature" alt="">
+                <h2 class="team-info__title">Front-end developer</h2>
+                <p class="team-info__text">
+                    Juan Mendez
+                </p>
+            </article>
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="http://placeimg.com/100/200/arch" alt="">
+                <h2 class="team-info__title">Back-end developer</h2>
+                <p class="team-info__text">
+                    Camilo Rodriguez y Eider Julio
+                </p>
+            </article>
+
+        </section>
+        <!-- fin sección de Development Team -->
+
+    </main>
+
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+
+
+    <footer class="footer-section">
+        <article>
+            <h2>Contacto</h2>
+            <p>Grupo de Whatssapp</p>
+            <A HREF="https://chat.whatsapp.com/JAXrCgA2p8rIDyFm7p8zcM"> Únete aquí </A>
+            <p>https://chat.whatsapp.com/JAXrCgA2p8rIDyFm7p8zcM</p>
+        </article>
+        <article>
+            <h2>Repositorio</h2>
+            <p>GITHUB</p>
+            <A HREF="https://github.com/Grupo-8-mintic-p76/Sprint"> Únete aquí </A>
+            <p>https://github.com/Grupo-8-mintic-p76/Sprint</p>
+        </article>
+    </footer>
+
+    <!-- fin pie del sitio -->
+
+</body>
+
+</html>
